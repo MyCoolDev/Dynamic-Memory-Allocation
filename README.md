@@ -5,9 +5,7 @@ This readme can be used as a some kind of totorial.
 
 ## Malloc
 malloc is a function that dynamiclly allocate memory in the heap and return a pointer to the start.
-I'll implement malloc using [sbrk](#sbrk).
-
-
+I'll implement malloc using [sbrk](#brk-sbrk).
 
 ### brk, sbrk
 ```
