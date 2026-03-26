@@ -47,7 +47,10 @@ void *allocate(allocator_t *allocator, size_t size)
     block = search_for_block(allocator, size);
 
     if (block != NULL)
+    {
+        block->free = 0;
         return block;
+    }
 
     /* create new block and add it to the linked list */
 
