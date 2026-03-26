@@ -49,7 +49,7 @@ void *allocate(allocator_t *allocator, size_t size)
     if (block != NULL)
     {
         block->free = 0;
-        return block;
+        return block+1;
     }
 
     /* create new block and add it to the linked list */
